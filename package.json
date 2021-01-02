@@ -1,0 +1,25 @@
+{
+  "name": "Bulk-Email-System",
+  "version": "1.0.0",
+  "description": "using Nodemailer",
+  "main": "index.js",
+  "dependencies": {
+    "nodemailer": "^6.4.17",
+    "read-excel-file": "^5.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geekcodershivam/Bulk-Email-System.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geekcodershivam/Bulk-Email-System/issues"
+  },
+  "homepage": "https://github.com/geekcodershivam/Bulk-Email-System#readme"
+}
