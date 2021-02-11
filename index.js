@@ -157,12 +157,13 @@ a, a:hover {
 					padding-top: 25px;
 					color: #000000;
 					font-family: sans-serif;" class="paragraph">
-                    <h3 style="color: #333333;">Congratulations</h3><br>
-                    We have successfully reserved your a seat in the <strong>Getting started with Open source and GSSoC
+                    <h3 style="color: #333333;">Congratulations</h3>
+                     We have successfully reserved your seat in <strong>Getting started with Open source and GSSoC
                       by #define</strong> !
                     <br>
                     <br>
                     <b>Event details:</b> <br>Date: 13 February 2021<br>Time: 07:00PM <br>Meeting link: Will be shared soon
+                    <br>
                     <br>
                     <b>For more updates join our discord server:</b>  https://discord.gg/TS5sXznx
                   </td>
@@ -271,16 +272,19 @@ a, a:hover {
 
 </html>`
 
+
         async function sendermail(email){
+
                   const mail=mailer.sendMails(email,"Welcome To #define",html);
                   await mail;
         }
         
             xlsxFile('./Data.xlsx',).then((rows) => {
+
                 for (i in rows){
                         for (j in rows[i]){
-                            sendermail(rows[i][0]);
-                        }
+                          //console.log(rows[i][0]);
+                          sendermail(rows[i][0])}
                     }
                 })
                 
